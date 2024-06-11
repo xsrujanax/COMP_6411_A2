@@ -4,6 +4,7 @@
 
 (defn display-menu []
   (loop []
+    (print "\u001b[2J")  ; ANSI escape sequence to clear the screen
     (println "\n*** Sales Menu ***")
     (println "1. Display Customer Table")
     (println "2. Display Product Table")
